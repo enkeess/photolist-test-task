@@ -1,0 +1,15 @@
+.app {
+	grid-area: app;
+
+	padding: 0 20px;
+	padding-bottom: 20px;
+}
+
+.container {
+	display: grid;
+	align-items: flex-start;
+	justify-content: center;
+
+	max-width: 728px;
+	margin: 0 auto;
+}

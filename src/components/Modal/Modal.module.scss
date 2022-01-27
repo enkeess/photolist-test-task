@@ -1,0 +1,72 @@
+.modal {
+	position: relative;
+
+	display: grid;
+
+	width: 619px;
+	height: 425px;
+	padding: 30px;
+
+	background: #FFF;
+	grid-template-columns: 330px 1fr;
+	grid-template-rows: 205px 1fr;
+	grid-template-areas:
+		"photo comments"
+		"form comments";
+	gap: 30px 14px;
+
+	&Container {
+		position: absolute;
+		z-index: 100;
+		top: 0;
+		left: 0;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		width: 100vw;
+		height: 100vh;
+
+		background: rgb(0 0 0 / 50%);
+	}
+
+	&Img {
+		width: 330px;
+		height: 205px;
+		grid-area: photo;
+	}
+
+	&Close {
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		width: 60px;
+		height: 60px;
+
+		cursor: pointer;
+
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 540px) {
+	.modal {
+		max-width: 100vw;
+		height: 100vh;
+		padding: 0;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas: "photo" "comments" "form";
+
+		&Img {
+			width: 100vw;
+			max-width: 100%;
+		}
+	}
+}

@@ -1,0 +1,37 @@
+form {
+	grid-area: form;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 20px;
+}
+
+.input {
+	box-sizing: border-box;
+	width: 100%;
+	height: 30px;
+	padding: 0 10px;
+
+	border: 1px solid #CCC;
+	border-radius: 3px;
+	background: #FFF;
+}
+
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	height: 30px;
+
+	color: #FFF;
+	border: none;
+	border-radius: 3px;
+	background: #4997D0;
+}
+
+@media (max-width: 540px) {
+	.form {
+		margin: 20px;
+	}
+}

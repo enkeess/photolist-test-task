@@ -1,0 +1,12 @@
+.list {
+	grid-area: comments;
+
+	display: grid;
+	gap: 20px;
+}
+
+@media (max-width: 540px) {
+	.list {
+		margin: 20px;
+	}
+}
